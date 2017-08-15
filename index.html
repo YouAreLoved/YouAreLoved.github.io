@@ -1,66 +1,189 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset='utf-8' />
+<!DOCTYPE html>
+<html lang="en">
 
-    <!-- jQuery -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="http://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
 
-    <!-- Firebase -->
-  
-<script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
-<script>
-  // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyC12UZy009sTuhvXw44qMuCxNg96req4Lo",
-    authDomain: "you-are-loved.firebaseapp.com",
-    databaseURL: "https://you-are-loved.firebaseio.com",
-    projectId: "you-are-loved",
-    storageBucket: "you-are-loved.appspot.com",
-    messagingSenderId: "235771508829"
-  };
-  firebase.initializeApp(config);
-</script>
-    <!-- Firechat -->
-    <link rel="stylesheet" href="https://cdn.firebase.com/libs/firechat/3.0.1/firechat.min.css" />
-    <script src="https://cdn.firebase.com/libs/firechat/3.0.1/firechat.min.js"></script>
-  </head>
-  <body>
-    <script>
-      function login() {
-        // Log the user in via Twitter
-        var provider = new firebase.auth.TwitterAuthProvider();
-        firebase.auth().signInWithPopup(provider).then(function(result){
-          var token=result.credential.accessToken;
-          var secret=result.credential.secret;
-          var user = result.user;
-          }).catch(function(error) {
-          console.log("Error authenticating user:", error);
-        });
-      }
 
-      firebase.auth().onAuthStateChanged(function(user) {
-        // Once authenticated, instantiate Firechat with the logged in user
-        if (user) {
-          initChat(user);
-        }
+  <!-- start combining both codes  -->
+  <!-- Firebase -->
+
+  <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyC12UZy009sTuhvXw44qMuCxNg96req4Lo",
+      authDomain: "you-are-loved.firebaseapp.com",
+      databaseURL: "https://you-are-loved.firebaseio.com",
+      projectId: "you-are-loved",
+      storageBucket: "you-are-loved.appspot.com",
+      messagingSenderId: "235771508829"
+    };
+    firebase.initializeApp(config);
+  </script>
+  <!-- Firechat -->
+  <link rel="stylesheet" href="https://cdn.firebase.com/libs/firechat/3.0.1/firechat.min.css" />
+  <script src="https://cdn.firebase.com/libs/firechat/3.0.1/firechat.min.js"></script>
+
+
+  <!-- Twitter Stuff -->
+  <script>
+    function login() {
+      // Log the user in via Twitter
+      var provider = new firebase.auth.TwitterAuthProvider();
+      firebase.auth().signInWithPopup(provider).then(function (result) {
+        var token = result.credential.accessToken;
+        var secret = result.credential.secret;
+        var user = result.user;
+      }).catch(function (error) {
+        console.log("Error authenticating user:", error);
       });
-
-      function initChat(user) {
-        // Get a Firebase Database ref
-        var chatRef = firebase.database().ref("chat");
-
-        // Create a Firechat instance
-        var chat = new FirechatUI(chatRef, document.getElementById("firechat-wrapper"));
-
-        // Set the Firechat user
-        chat.setUser(user.uid, user.displayName);
+    }
+    firebase.auth().onAuthStateChanged(function (user) {
+      // Once authenticated, instantiate Firechat with the logged in user
+      if (user) {
+        initChat(user);
       }
-    </script>
+    });
+    function initChat(user) {
+      // Get a Firebase Database ref
+      var chatRef = firebase.database().ref("chat");
+      // Create a Firechat instance
+      var chat = new FirechatUI(chatRef, document.getElementById("firechat-wrapper"));
+      // Set the Firechat user
+      chat.setUser(user.uid, user.displayName);
+    }
+  </script>
+  <title>You Are Loved</title>
+</head>
 
-    <div id="firechat-wrapper">
-      <button onclick="login('twitter');">Login with Twitter</button>
+<body>
+  <a href="#portfolioModal" class="portfolio-link" data-toggle="modal">
+            <div class="caption">
+                <div class="caption-content">
+                    <i class="fa fa-search-plus fa-3x"></i>
+                </div>
+            </div>
+            <center>
+                <img img id="rock" height=50px width=50px src="https://cdn4.iconfinder.com/data/icons/wirecons-free-vector-icons/32/menu-alt-512.png"></img>
+            </center>
+        </a>
+  <div class="portfolio-modal modal fade" id="portfolioModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content">
+      <div class="close-modal" data-dismiss="modal">
+        <div class="lr">
+          <div class="rl">
+          </div>
+        </div>
+      </div>
+      <div class="userContainer">
+        <form>
+          <div id="firechat-wrapper" class="LoginButton">
+    <button onclick="login('twitter');">Login</button>
+  </div>
+        </form>
+      </div>
     </div>
+  </div>
+  
 
-  </body>
+
+
+
+  <div class="bgImg"><img src="Logo.png"></div>
+  <div id="firstContainer" class="container">
+    <div class="row">
+      <div class="col-md-8">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt laborum dignissimos voluptatem sed incidunt animi eius
+        consectetur possimus minima inventore maiores quod sint reprehenderit, et nulla recusandae. Ratione, soluta! Aliquam.
+      </div>
+      <div id="rightBlock" class="col-md-4">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae aut quasi ut, esse quibusdam magni a laboriosam deleniti accusantium
+        ea, omnis minima culpa. Quam praesentium similique velit omnis ducimus. Consequuntur!
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-8">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt laborum dignissimos voluptatem sed incidunt animi eius
+        consectetur possimus minima inventore maiores quod sint reprehenderit, et nulla recusandae. Ratione, soluta! Aliquam.
+      </div>
+      <div id="rightBlock" class="col-md-4">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae aut quasi ut, esse quibusdam magni a laboriosam deleniti accusantium
+        ea, omnis minima culpa. Quam praesentium similique velit omnis ducimus. Consequuntur!
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-8">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt laborum dignissimos voluptatem sed incidunt animi eius
+        consectetur possimus minima inventore maiores quod sint reprehenderit, et nulla recusandae. Ratione, soluta! Aliquam.
+      </div>
+      <div id="rightBlock" class="col-md-4">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae aut quasi ut, esse quibusdam magni a laboriosam deleniti accusantium
+        ea, omnis minima culpa. Quam praesentium similique velit omnis ducimus. Consequuntur!
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-8">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt laborum dignissimos voluptatem sed incidunt animi eius
+        consectetur possimus minima inventore maiores quod sint reprehenderit, et nulla recusandae. Ratione, soluta! Aliquam.
+      </div>
+      <div id="rightBlock" class="col-md-4">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae aut quasi ut, esse quibusdam magni a laboriosam deleniti accusantium
+        ea, omnis minima culpa. Quam praesentium similique velit omnis ducimus. Consequuntur!
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-8">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt laborum dignissimos voluptatem sed incidunt animi eius
+        consectetur possimus minima inventore maiores quod sint reprehenderit, et nulla recusandae. Ratione, soluta! Aliquam.
+      </div>
+      <div id="rightBlock" class="col-md-4">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae aut quasi ut, esse quibusdam magni a laboriosam deleniti accusantium
+        ea, omnis minima culpa. Quam praesentium similique velit omnis ducimus. Consequuntur!
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-8">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt laborum dignissimos voluptatem sed incidunt animi eius
+        consectetur possimus minima inventore maiores quod sint reprehenderit, et nulla recusandae. Ratione, soluta! Aliquam.
+      </div>
+      <div id="rightBlock" class="col-md-4">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae aut quasi ut, esse quibusdam magni a laboriosam deleniti accusantium
+        ea, omnis minima culpa. Quam praesentium similique velit omnis ducimus. Consequuntur!
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-8">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt laborum dignissimos voluptatem sed incidunt animi eius
+        consectetur possimus minima inventore maiores quod sint reprehenderit, et nulla recusandae. Ratione, soluta! Aliquam.
+      </div>
+      <div id="rightBlock" class="col-md-4">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae aut quasi ut, esse quibusdam magni a laboriosam deleniti accusantium
+        ea, omnis minima culpa. Quam praesentium similique velit omnis ducimus. Consequuntur!
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-8">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt laborum dignissimos voluptatem sed incidunt animi eius
+        consectetur possimus minima inventore maiores quod sint reprehenderit, et nulla recusandae. Ratione, soluta! Aliquam.
+      </div>
+      <div id="rightBlock" class="col-md-4">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae aut quasi ut, esse quibusdam magni a laboriosam deleniti accusantium
+        ea, omnis minima culpa. Quam praesentium similique velit omnis ducimus. Consequuntur!
+      </div>
+    </div>
+  </div>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link rel="Stylesheet" href="style.css">
+</body>
+
+<script src="main.js"></script>
+
 </html>
