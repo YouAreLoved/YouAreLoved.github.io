@@ -105,3 +105,76 @@ height:40%;
 .collapsed + .main-content {
   margin-left: 60px;
 }
+
+#tile{
+background: url(http://s1.r29static.com//bin/entry/124/x,80/1373439/image.jpg);
+background-size: 100%;
+background-repeat: no-repeat;
+}
+
+
+#dominick{
+background: url(https://files.slack.com/files-tmb/T6139LFPE-F6PDUSWKW-8935fa145a/dominick_quagliata_360.jpg);
+background-size: 100%; 
+background-repeat: no-repeat;
+}
+#beverly{
+background: url(https://static1.squarespace.com/static/51cb0705e4b03f555191f21d/t/5940c1bdd482e984f6b0a2cd/1497416131642/?format=2500w);
+background-size: 100%; 
+background-repeat: no-repeat;
+}
+
+#kate{
+background: url(https://files.slack.com/files-pri/T6139LFPE-F6PAADVEX/kate_machugh.jpg);
+background-size: 100%; 
+background-repeat: no-repeat;
+}
+
+#kelechi{
+background: url(https://files.slack.com/files-tmb/T6139LFPE-F6QFBL4K1-d7a6089331/kelechi_marie_720.jpg);
+background-size: 100%; 
+background-repeat: no-repeat;
+}
+
+
+#melody{background: url(https://files.slack.com/files-tmb/T6139LFPE-F6PEH114L-55be08017a/melody_moezzi_720.jpg);
+background-size: 100%; 
+background-repeat: no-repeat;
+}
+
+.userContainer{
+padding: 20px;
+
+}
+
+#worker1-modal-pic {
+  height: 20%;
+}
+
+#worker1-modal-text {
+  font-size: 40px;
+  text-align: left;
+  position: absolute;
+  left: 30%;
+  top: 10%;
+}
+
+#worker1-modal-chatbutton {
+  background-color: #4CAF50 ;
+  border: none;
+  color: white;
+  padding: 20px 100px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  position: absolute;
+  left: 40%;
+  bottom:10%;
+}
+
+#worker2-modal-pic {
+  width:30%;
+}
