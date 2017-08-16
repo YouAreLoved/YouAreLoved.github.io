@@ -178,3 +178,17 @@ padding: 20px;
 #worker2-modal-pic {
   width:30%;
 }
+
+.input-group{
+  position: fixed; /* or absolute */
+  top: 60%;
+   left: 25%; 
+   width: 50%;
+}
+#lity{
+ position: fixed; /* or absolute */
+  top: 30%;
+   left: 25%; 
+  /* width: 100%; */
+ font-size: 1000%;
+}

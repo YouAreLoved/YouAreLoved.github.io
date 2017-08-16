@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 
   <!-- start combining both codes  -->
   <!-- Firebase -->
@@ -62,663 +62,701 @@
       storename(user.displayName);
     }
   </script>
+
   <title>UR
     <3</title>
 </head>
 
 <body>
+  <h1 id="lity" class="animated rubberBand">You Are
+ <3 </h1>
 
-  <!--================================================================FIRECHAT===========================================================================================-->
-  <div class="portfolio-modal modal fade" id="portfolioModal" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-content">
-      <div class="close-modal" data-dismiss="modal">
-        <div class="lr">
-          <div class="rl">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="input-group">
+            <span class="input-group-btn">
+       <a  href="#home" class="portfolio-link" data-toggle="modal"><button onclick="storename(name)" class="btn btn-default" type="button">SUBMIT</button></a>
+      </span>
+            <input id="un" type="text" class="form-control" placeholder="USERNAME">
           </div>
+          <!-- /input-group -->
         </div>
+        <!-- /.col-lg-6 -->
       </div>
-      <div class="userContainer">
-        <form>
-          <div id="firechat-wrapper" class="LoginButton">
-            <button onclick="login('twitter');">Login</button>
+      <!-- /.row -->
+
+
+
+      <div class="portfolio-modal modal fade" id="home" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+          <!--================================================================FIRECHAT===========================================================================================-->
+          <div class="portfolio-modal modal fade" id="portfolioModal" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-content">
+              <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                  <div class="rl">
+                  </div>
+                </div>
+              </div>
+              <div class="userContainer">
+                <form>
+                  <div id="firechat-wrapper" class="LoginButton">
+                    <button onclick="login('twitter');">Login</button>
+                  </div>
+                </form>
+              </div>
+            </div>
           </div>
-        </form>
-      </div>
-    </div>
-  </div>
 
-  <!--================================================================NAV BAR===========================================================================================-->
+          <!--================================================================NAV BAR===========================================================================================-->
 
-  <!--========TOP NAV===========-->
-  <nav class="navbar navbar-inverse navbar-global navbar-fixed-top">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
-          aria-controls="navbar">
+          <!--========TOP NAV===========-->
+          <nav class="navbar navbar-inverse navbar-global navbar-fixed-top">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+                  aria-controls="navbar">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-        <a class="navbar-brand" href="#">YOU ARE LOVED LOGO</a>
-      </div>
-      <div id="navbar" class="collapse navbar-collapse">
-        <ul class="nav navbar-nav navbar-user navbar-right">
-          <li><a href="#"><span id="profile"class="glyphicon glyphicon-user"></span></a></li>
-          <li><a href="#about"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
-        </ul>
-      </div>
-      <!--/.nav-collapse -->
-    </div>
-  </nav>
-  <!--========VERTICAL NAV===========-->
-  <nav class="navbar-primary">
-    <a href="#" class="btn-expand-collapse"><span class="glyphicon glyphicon-menu-left"></span></a>
-    <ul class="navbar-primary-menu">
-      <li>
-        <a href="#top"><span class="glyphicon glyphicon-home"></span><span class="nav-label">HOME</span></a>
-        <a href="#portfolioModal" class="portfolio-link" data-toggle="modal"><span class="glyphicon glyphicon-envelope"></span><span class="nav-label">CHAT</span></a>
-        <a href="#" class="portfolio-link" data-toggle="modal"><span class="glyphicon glyphicon-modal-window"></span><span class="nav-label">ABOUT</span></a>
-        <a href="#worker1" class="portfolio-link" data-toggle="modal"><span class=""><img id="worker-pics" class="img-circle img-responsive" src="worker1.jpg"></a>        
-        <a href="#worker2" class="portfolio-link" data-toggle="modal"><span class=""><img id="worker-pics" class="img-circle img-responsive" src="http://www.bulle8.com/wp-content/uploads/2017/01/pp.jpg"></a>
-        <a href="#worker3" class="portfolio-link" data-toggle="modal"><span class=""><img id="worker-pics" class="img-circle img-responsive" src=" http://www.bulle8.com/wp-content/uploads/2017/01/%5EEB015A896D74E1A61B1AB2D3BAB843A0076B0257B42BDE912E%5Epimgt1_distr.jpg"></a>
-        <a href="#worker4" class="portfolio-link" data-toggle="modal"><span class=""><img id="worker-pics" class="img-circle img-responsive" src=" https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAxsAAAAJDBiZWJhZTJkLWVjNzQtNDE4My05MjM4LTU0MjI2ODRmYTdlYg.jpg"></a>
-        <a href="#worker5" class="portfolio-link" data-toggle="modal"><span class=""><img id="worker-pics" class="img-circle img-responsive" src="Noor.png"></a>
+                <a class="navbar-brand" href="#">YOU ARE LOVED LOGO</a>
+              </div>
+              <div id="navbar" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-user navbar-right">
+                  <li><a href="#"><span id="profile"class="glyphicon glyphicon-user"></span></a></li>
+                  <li><a href="#about"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+                </ul>
+              </div>
+              <!--/.nav-collapse -->
+            </div>
+          </nav>
+          <!--========VERTICAL NAV===========-->
+          <nav class="navbar-primary">
+            <a href="#" class="btn-expand-collapse"><span class="glyphicon glyphicon-menu-left"></span></a>
+            <ul class="navbar-primary-menu">
+              <li>
+                <a href="#top"><span class="glyphicon glyphicon-home"></span><span class="nav-label">HOME</span></a>
+                <a href="#portfolioModal" class="portfolio-link" data-toggle="modal"><span class="glyphicon glyphicon-envelope"></span><span class="nav-label">CHAT</span></a>
+                <a href="#" class="portfolio-link" data-toggle="modal"><span class="glyphicon glyphicon-modal-window"></span><span class="nav-label">ABOUT</span></a>
+                <a href="#worker1" class="portfolio-link" data-toggle="modal"><span class=""><img id="worker-pics" class="img-circle img-responsive" src="worker1.jpg"></a>
+                <a href="#worker2" class="portfolio-link" data-toggle="modal"><span class=""><img id="worker-pics" class="img-circle img-responsive" src="http://www.bulle8.com/wp-content/uploads/2017/01/pp.jpg"></a>
+                <a href="#worker3" class="portfolio-link" data-toggle="modal"><span class=""><img id="worker-pics" class="img-circle img-responsive" src=" http://www.bulle8.com/wp-content/uploads/2017/01/%5EEB015A896D74E1A61B1AB2D3BAB843A0076B0257B42BDE912E%5Epimgt1_distr.jpg"></a>
+                <a href="#worker4" class="portfolio-link" data-toggle="modal"><span class=""><img id="worker-pics" class="img-circle img-responsive" src=" https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAxsAAAAJDBiZWJhZTJkLWVjNzQtNDE4My05MjM4LTU0MjI2ODRmYTdlYg.jpg"></a>
+                <a href="#worker5" class="portfolio-link" data-toggle="modal"><span class=""><img id="worker-pics" class="img-circle img-responsive" src="Noor.png"></a>
 
-        </li>
-    </ul>
-  </nav>
-  <!--================================================================FEATURED STORIES===========================================================================================-->
+              </li>
+            </ul>
+          </nav>
+          <!--================================================================FEATURED STORIES===========================================================================================-->
 
-  <!--=========ROW 1=========-->
+          <!--=========ROW 1=========-->
 
-  <div id="firstContainer" class="main-content">
-    <div class="row">
+          <div id="firstContainer" class="main-content">
+            <div class="row">
 
-      <!--BOX 1-->
-      <div class="col-md-6">
-        <div id="tile" class="jumbotron">
-          <h1 class="top">Tile Celeste</h1>
-          <p> "I realized that I didn’t want to die. But, that’s unique. That’s not everyone. It wasn’t a release; it was afraid.
-            I was afraid, and I said, 'There must be someone that I like in there,' and that was what I realized."</p>
-          <p><a class="btn btn-primary btn-lg portfolio-link" data-toggle="modal" href="#box1" role="button">Learn more</a></p>
-        </div>
-      </div>
+              <!--BOX 1-->
+              <div class="col-md-6">
+                <div id="tile" class="jumbotron">
+                  <h1 class="top">Tile Celeste</h1>
+                  <p> "I realized that I didn’t want to die. But, that’s unique. That’s not everyone. It wasn’t a release; it
+                    was afraid. I was afraid, and I said, 'There must be someone that I like in there,' and that was what
+                    I realized."</p>
+                  <p><a class="btn btn-primary btn-lg portfolio-link" data-toggle="modal" href="#box1" role="button">Learn more</a></p>
+                </div>
+              </div>
 
-      <!--BOX 2-->
-      <div class="col-md-6">
-        <div id="dominick" class="jumbotron">
-          <h1 class="top">Dominick Quagliata</h1>
-          <p>"It took me a long time to do it, but in the end, I found part of myself again."</p>
-          <p><a class="btn btn-primary btn-lg portfolio-link" data-toggle="modal" href="#box2" role="button">Learn more</a></p>
-        </div>
-      </div>
+              <!--BOX 2-->
+              <div class="col-md-6">
+                <div id="dominick" class="jumbotron">
+                  <h1 class="top">Dominick Quagliata</h1>
+                  <p>"It took me a long time to do it, but in the end, I found part of myself again."</p>
+                  <p><a class="btn btn-primary btn-lg portfolio-link" data-toggle="modal" href="#box2" role="button">Learn more</a></p>
+                </div>
+              </div>
 
-    </div>
-
-
-    <!--=========ROW 2=========-->
-    <div class="row">
-
-      <!--BOX 3-->
-      <div class="col-md-6">
-        <div id="beverly" class="jumbotron">
-          <h1 class="top">Beverly Kikuta</h1>
-          <p>"When I was going through everything, it would have really helped me if I’d talked to people or heard their stories;
-            to hear what they went through and to know eventually it’ll get better. If I could help with that, I think that
-            would be awesome."</p>
-          <p><a class="btn btn-primary btn-lg portfolio-link" data-toggle="modal" href="#box3" role="button">Learn more</a></p>
-        </div>
-      </div>
-
-      <!--BOX 4-->
-      <div class="col-md-6">
-        <div id="kate" class="jumbotron">
-          <h1 class="top">Kate MacHugh</h1>
-          <p> "I internalized these messages and they became part of my identity. I began to tell myself that I was smart, loved
-            and beautiful." </p>
-          <p><a class="btn btn-primary btn-lg portfolio-link" data-toggle="modal" href="#box4" role="button">Learn more</a></p>
-        </div>
-      </div>
-    </div>
+            </div>
 
 
-    <!--=========ROW 3=========-->
-    <div class="row">
+            <!--=========ROW 2=========-->
+            <div class="row">
 
-      <!--BOX 5-->
-      <div class="col-md-6">
-        <div id="kelechi" class="jumbotron">
-          <h1 class="top">Kelechi Marie</h1>
-          <p>"It's like, 'Do you really wanna go? Maybe just keep trying and all of the good things you're doing will catch
-            up with you and you'll feel better.'"</p>
-          <p><a class="btn btn-primary btn-lg portfolio-link" data-toggle="modal" href="#box5" role="button">Learn more</a></p>
-        </div>
-      </div>
+              <!--BOX 3-->
+              <div class="col-md-6">
+                <div id="beverly" class="jumbotron">
+                  <h1 class="top">Beverly Kikuta</h1>
+                  <p>"When I was going through everything, it would have really helped me if I’d talked to people or heard their
+                    stories; to hear what they went through and to know eventually it’ll get better. If I could help with
+                    that, I think that would be awesome."</p>
+                  <p><a class="btn btn-primary btn-lg portfolio-link" data-toggle="modal" href="#box3" role="button">Learn more</a></p>
+                </div>
+              </div>
 
-      <!--BOX 6-->
-      <div class="col-md-6">
-        <div id="melody" class="jumbotron">
-          <h1 class="top">Melody Moezzi</h1>
-          <p>"That was the thing that really pissed me off when I went into the hospital and realized that."</p>
-          <p><a class="btn btn-primary btn-lg portfolio-link" data-toggle="modal" href="#box6" role="button">Learn more</a></p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!--================================================================FEATURED STORY MODALS===========================================================================================-->
-  <!--=========BOX 1=========-->
-  <div class="portfolio-modal modal fade" id="box1" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-content">
-      <div class="close-modal" data-dismiss="modal">
-        <div class="lr">
-          <div class="rl">
+              <!--BOX 4-->
+              <div class="col-md-6">
+                <div id="kate" class="jumbotron">
+                  <h1 class="top">Kate MacHugh</h1>
+                  <p> "I internalized these messages and they became part of my identity. I began to tell myself that I was smart,
+                    loved and beautiful." </p>
+                  <p><a class="btn btn-primary btn-lg portfolio-link" data-toggle="modal" href="#box4" role="button">Learn more</a></p>
+                </div>
+              </div>
+            </div>
+
+
+            <!--=========ROW 3=========-->
+            <div class="row">
+
+              <!--BOX 5-->
+              <div class="col-md-6">
+                <div id="kelechi" class="jumbotron">
+                  <h1 class="top">Kelechi Marie</h1>
+                  <p>"It's like, 'Do you really wanna go? Maybe just keep trying and all of the good things you're doing will
+                    catch up with you and you'll feel better.'"</p>
+                  <p><a class="btn btn-primary btn-lg portfolio-link" data-toggle="modal" href="#box5" role="button">Learn more</a></p>
+                </div>
+              </div>
+
+              <!--BOX 6-->
+              <div class="col-md-6">
+                <div id="melody" class="jumbotron">
+                  <h1 class="top">Melody Moezzi</h1>
+                  <p>"That was the thing that really pissed me off when I went into the hospital and realized that."</p>
+                  <p><a class="btn btn-primary btn-lg portfolio-link" data-toggle="modal" href="#box6" role="button">Learn more</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--================================================================FEATURED STORY MODALS===========================================================================================-->
+          <!--=========BOX 1=========-->
+          <div class="portfolio-modal modal fade" id="box1" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-content">
+              <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                  <div class="rl">
+                  </div>
+                </div>
+              </div>
+              <div class="userContainer">
+                <form>
+                  <p>
+                    <br> "I think the aftermath was really constructive. I needed to know what was worth saving about me.
+                    <br> After that, I spent so much time alone because I felt like I needed to give myself rehab. I started
+                    writing and photographing things and
+                    <br> living with myself, being my own girlfriend… I started figuring out who I wanted to save: the Tile
+                    that I didn’t want to be gone.
+                    <br>
+                    <br> "For me, in the moments after I had actually done everything that I had been planning for so
+                    <br> long, I realized that I didn’t want to die. But, that’s unique. That’s not everyone. It wasn’t a
+                    release; it
+                    <br> was afraid. I was afraid, and I said, 'There must be someone that I like in there,' and that was
+                    what I realized."
+                  </p>
+
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <!--=========BOX 2=========-->
+          <div class="portfolio-modal modal fade" id="box2" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-content">
+              <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                  <div class="rl">
+                  </div>
+                </div>
+              </div>
+              <div class="userContainer">
+                <form>
+                  <p>"They say time heals all wounds... I still have those thoughts every day. Every once in a while, I’ll think
+                    about it and go, 'Why am I here? What’s keeping me tethered to this, right here?' </p>
+                  <br>
+                  <p> "I’ve met a bunch of people, and they say that I’m a really awesome guy, that I’m really easy to talk to,
+                    I’m really funny. They give me all these compliments and stuff and I’m like, 'You might see that, but
+                    I don’t know how much of that is actually real.'</p>
+                  <br>
+                  <p>"I don’t know how much of that is actually just me putting on a face and smiling through my teeth, or an
+                    actual thing, 'cause I feel when I did that, I really lost a huge sense of my own identity. I didn’t
+                    know who I was for a while. I didn’t know this person that I became, because I really shattered what
+                    self-image I had. That became the hardest thing to cope with — my own self-image and trying to rebuild
+                    that. It took me a long time to do it, but in the end, I found part of myself again."
+                  </p>
+
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <!--=========BOX 3=========-->
+          <div class="portfolio-modal modal fade" id="box3" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-content">
+              <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                  <div class="rl">
+                  </div>
+                </div>
+              </div>
+              <div class="userContainer">
+                <br> The first time I attempted suicide, I was a junior in high school. It was around the time of college
+                applications. Everyone’s like, “We need to figure out our future.” I was like, “Oh, god. I can’t do that.
+                I have no idea.” Plus, I’d been depressed for a few years, starting in middle school, so it was that and
+                the uncertainty of leaving high school. I had no idea what I was doing, but apparently I should have known
+                at that point, which is a terrible thing to tell teenagers.
+                <br>
+                <br>I was at a school that was pretty high-achieving, so I was surrounded by people that were really on-track.
+                They had their shit together. They knew what they were doing, and I was floundering. I thought I was supposed
+                to be one of these put-together people, but I couldn’t quite do it. Eventually I got way too overwhelmed.
+                I was like, “I can’t. I can’t do it. I just can’t deal with this.”
+                <br>
+                <br>Going to school was so terrible. I’d wake up every morning and go, “Goddammit. I have to do this again.”
+                It was painful going through the motions.
+                <br>
+                <br>One night, I was home alone. I lived with my mom at the time, but she was out. I overdosed on pills I
+                found around the house. Shortly after I took them, I thought, “Maybe this was not a good idea.” I called
+                a friend. She came over and called the ambulance. I was taken to the hospital, and I voluntarily went into
+                a psych ward. I was only there a few days because I was a minor at the time. Pretty much whatever my parents
+                said went.
+                <br>
+                <br>After a couple of days, my mom was like, “Yeah, I think you’re good now.”
+                <br>
+                <br>I was like, “Alright, let’s bounce, I guess.”
+                <br>
+                <br>My time in there wasn’t really helpful. I expected people, in general, to be really judgmental because
+                there’s still such a strong stigma, but I didn’t expect medical professionals to be that judgmental. The
+                mental health techs were really nice. They interacted with patients all the time; they knew what was what.
+                When I talked to psychiatrists, they would be like, “Oh, you know, what you did was really serious. You really
+                worried your parents.”
+                <br>
+                <br>I was like, “I know. I’m sorry. That’s not what I meant to do. I’m just a teenager, my brain is not good
+                yet.”
+                <br>
+                <br>I was put on medication. They didn’t really talk too much about it. [They just said], “It’s an SSRI.
+                This is how it works. Take it every day. You’ll start feeling better in a couple weeks.”
+                <br>
+                <br>At some point, I stopped taking them cold turkey. They always say not to do that, ever—it’s terrible—but
+                I did, and I felt horrible. I thought, “I don’t really need these pills anymore. I’m feeling better,” so
+                I stopped taking them, which was probably a bad idea. It was definitely a bad idea without consulting someone.
+                <br>
+                <br>Then, I was alright. I was pretty stable for the next couple years, living at home, and going to community
+                college, trying to transfer out. I really wanted to leave home and go anywhere but California. Maybe three
+                years later, I transferred to upstate New York to go to school. It was not a good idea. I didn’t know anyone
+                in New York.
+                <br>
+                <br>It was about two hours out of the city—a really small place. The only person I knew lived about five
+                hours away from me. All my friends were back in California and I don’t make new friends easily. I got along
+                well with my housemates, but other than that, I didn’t really have any friends. There wasn’t much social
+                support.
+                <br>
+                <br>Part of my deteriorating mental state at that time was [due] to taking really early classes. They were
+                at 7 AM, so I had to wake up around 6. It sounds kind of dumb—it’s just waking up early—but I get super crazy
+                when I don’t get enough sleep, so I’d stay up really late because I wasn’t thinking of consequences. Then
+                I’d wake up at 6 AM and drudge through the freezing cold into class every day. On top of that, I still didn’t
+                really know what I was doing. I was technically majoring in theater at the time, but I didn’t really want
+                to. I was thinking maybe English, but I couldn’t decide.
+                <br>
+                <br>So, I was up here, super far from everyone, doing something I wasn’t sure I wanted to do. I felt really
+                bad because my parents were paying for it, and it was really expensive, especially because I was out-of-state.
+                I got super inside-my-head again. I actually did go talk to a therapist at the school and got medication,
+                but I, again, stopped taking them. I’d miss some doses, [realize it], catch up, and then I’d forget again.
+                I was not consistent, which I think is important to taking medication.
+                <br>
+                <br>That was messing around with my brain. Everything was not good in my head. I didn’t know how to deal
+                with these feelings. I hadn’t dealt with them the first time I attempted. They were coming back, and I [didn’t
+                understand] why I was still feeling like that.
+                <br>
+                <br>I attempted suicide again near the end of the quarter. One of my roommates was home at the time, and
+                she took me to the hospital. This time, I was involuntarily committed to the psych ward, which was not fun.
+                My psychologist scared me. I didn’t like talking to him. He put me on a bunch of medications—maybe three
+                or four.
+                <br>
+                <br>I was there for about two weeks. The first few days were really freaking horrible. I didn’t know what
+                was going on. I didn’t know the routines. There were people telling me what to do all the time. It was a
+                strange experience.
+                <br>
+                <br>After the initial adjustment period, it was actually kind of a relief to be there. It’s not like anyone
+                in there was going to judge me. Everyone was in there for a reason, and it felt nice to not have to put on
+                the appearance that I was I fine. I could be super sad or… just be myself, I guess. Whatever I was at the
+                time.
+                <br>
+                <br>After I got out, I moved back to California. I didn’t really want to stay at home or deal with living
+                with my mom again so, shortly after that, I moved to Georgia to stay with one of my friends. I thought this
+                was definitely a good idea. It would be a new start, in a new place, with new scenery. This time I’d have
+                friends—one of my friends from California came with me. It was the three of us and a couple more people living
+                in an apartment, and I thought it would be great.
+                <br>
+                <br>It was alright for a while, and then I realized… living with friends is not necessarily the best idea.
+                I love my friends to death. We’re still really close, but we did not live well together. Maybe if I’d been
+                in a better place, then it might have been okay. We had a ton of freedom; we all worked part-time jobs, a
+                couple hours a week. Other than that, we could do pretty much whatever we wanted, whenever we wanted. Stay
+                up till 4, sleep in till 4.
+                <br>
+                <br>That was not helpful at the time, not at all. There were people coming in and out all the time. There
+                were lots of drugs—mostly weed. I was not into it at all. I reacted to that by being a horrible, horrible
+                roommate. I was super passive-aggressive and picked fights all the time. I made everything super toxic for
+                everyone who lived there, which made it worse for myself.
+                <br>
+                <br>At this point, I was really angry that I couldn’t get out of this funk. I didn’t understand why I felt
+                so bad all the time. Even back in middle school, when I first was diagnosed with depression, I didn’t know
+                why. They don’t really talk about it a lot in school, which is where I got most of my information. What I
+                knew about mental illness was from movies, TV, books… and it seemed like, in those cases, there was always
+                a catalyst or something that happened in their lives that derailed them—a reason why they’re depressed. I
+                didn’t have that. I had a really good childhood. There was no big trauma, nothing like that. So I thought,
+                “Why am I feeling like this? There’s no reason. It’s not legitimate. There must be something wrong with me
+                to feel this way.”
+                <br>
+                <br>I felt like that for a long time. When I was in Georgia, I was like, “Why do I still feel like this?
+                I need to just get over it or something.” I didn’t go see anyone. I think, when I moved there, I still had
+                medication leftover from when I was prescribed them in New York. When I ran out, I honestly didn’t know how
+                to get more or where to find a new psychologist. It was so daunting and I had no motivation to do it. I stopped
+                cold turkey again, which is way worse when you’re on a lot of medication.
+                <br>
+                <br>I was going through the withdrawal type things, which were awful. I was working a part-time job at a
+                restaurant nearby, and I hated it. I don’t really like talking to strangers a lot. It was so much interaction
+                constantly. People were always getting mad at me for stupid things I had no control over. I’m like, “I don’t
+                actually cook the meals. I just bring them to you and then take them away.” [It’s a high-pressure job], and
+                I just couldn’t do it. I’d only been there for a month or two, but I hated it. I hated living with my friends,
+                and I hated everything about the situation.
+                <br>
+                <br>One night, I was sulking in the room alone and thinking, “I have to get up early tomorrow for work. I
+                really don’t want to go to work. It’s terrible.” Then I got this thought in my head, “Well, I still have
+                [medication] left. If I take all of those and don’t wake up, I won’t have to go to work. I won’t have to
+                deal with work or my friends or any of this.” It wasn’t a logical thought at all, but it had lodged itself
+                into my mind like, “No work tomorrow. You don’t have to do it. Just take the pills, and that will solve everything.”
+                I was like, “Yeah, I’ll just do that.”
+                <br>
+                <br>The other two times I attempted, after I’d taken the pills, I realized it was a bad idea and I shouldn’t
+                have done that. This third time, the most recent time, I honestly didn’t care. I didn’t tell anyone. My friends
+                were all outside sleeping or doing whatever. I didn’t want to stop it. I wasn’t sure if I was going to wake
+                up or not, but if I didn’t… cool.
+                <br>
+                <br>I went to bed, and woke up maybe a couple hours later. I was super sick for the rest of the night. In
+                the morning, one of my friends found me passed out in the bathroom—so much puke everywhere. They had to call
+                an ambulance.
+                <br>
+                <br>I was involuntarily committed again, but this time was really scary because my friends didn’t know where
+                I was. I didn’t know how to get in contact with anyone. Apparently, once they moved me from the ER to the
+                psych floor, they weren’t allowed to tell anyone I was there, unless it was my family or something. I didn’t
+                realize that, so I was there for a couple days like, “Oh my god. Why aren’t my friends contacting me? I don’t
+                have any of my stuff.” I was in a hospital gown that was three sizes too big, so I wrapped it around myself
+                and shuffled through the halls like, “Where is everyone? I don’t know where I am, exactly. I don't know how
+                long I have to be here. I really want to see someone familiar.”
+                <br>
+                <br>That was really scary, but eventually I did get in contact with my friends. I was there for about two
+                weeks. I got out, and that was the last time. That was nine years ago.
+                <br>
+                <br>I’ve been doing a lot better. I wish I could say it was because I went to therapy and I started taking
+                medication regularly like an adult. But I didn’t. I probably should have. I think my brain chemistry maybe
+                settled down because I got older and into a more stable pattern of living. I wasn’t moving around constantly.
+                I got a job. I started going to school. Sometimes I still feel little glimpses of how I felt back then. It’s
+                terrifying, but generally those don’t last long.
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <!--=========BOX 4=========-->
+          <div class="portfolio-modal modal fade" id="box4" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-content">
+              <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                  <div class="rl">
+                  </div>
+                </div>
+              </div>
+              <div class="userContainer">
+                <form>
+                  <p>
+                    <br>Kate MacHugh is now 25. She’s an author and clinician.
+                    <br>
+                    <br>But she only got to where she is now by overcoming depression as a teenager.
+                    <br>
+                    <br>MacHugh said she was “harassed, humiliated and cyberbullied,” during her teenage years, leading her
+                    to go from being a happy and vibrant youngster to someone more angry and “sullen.” Once she became a
+                    different person, she slowly slipped into the murky waters of depression.
+                    <br>
+                    <br>“It was the lowest I have ever felt in my life," she said to the National.
+                    <br>
+                    <br>But everything changed once she went to college. The peers who had put her down and bullied her within
+                    the walls of high school were long gone, and she could finally start focusing on what made her unique
+                    and special. Instilling confidence in herself was what got her past depression and on a path to success,
+                    she said.
+                    <br>
+                    <br>“I worked really hard to change the messages in my head,” MacHugh said. “I was led to believe that
+                    I was ugly, worthless, and disgusting. I internalized these messages and they became part of my identity.
+                    I began to tell myself that I was smart, loved and beautiful."
+                  </p>
+
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <!--=========BOX 5=========-->
+          <div class="portfolio-modal modal fade" id="box5" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-content">
+              <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                  <div class="rl">
+                  </div>
+                </div>
+              </div>
+              <div class="userContainer">
+                <form>
+                  <p>
+                    <br> My faith? My faith is interesting. I grew up in the church, but I grew up in the Episcopalian church,
+                    which is like diet Catholic.
+                    <br> We're like, "Ehh! We're gonna say some nice and great stuff and here's a wafer, but you know, you
+                    can
+
+                    <br> get divorced, and gay people are cool." That's my kinda church.
+                    <br>
+
+                    <br> I grew up in a very open, lovely church, but I had difficulties with my relationship with God because
+                    I just didn't understand how I could be so sad, and when would it stop?
+                    <br>I attempted more than once, but the huge one when I was 25. <br>
+                    <br> When I was 25, I made a promise to God before I attempted and I said, "If this doesn't work, I'm
+                    never doing this again." I really meant it because
+                    <br> I felt like I needed to do something else. I had lost a friend who had died in an accident, and
+                    again,
+
+
+                    <br> I had a similar feeling of feeling guilty that I was going to attempt and that he wasn't here, and
+                    wanting to trade places like,
+                    <br>
+                    <br> "I would happily give my life, 'cause you deserve life, 'cause you want it. You're thirsty for it,and
+                    I question if I want it."
+                    <br>
+                    <br> The day that I attempted, I took this lavender rose that he had given to a friend, and my friend
+                    gave it to me, so I had it from him.
+                    <br> When I woke up the next day, after surviving, it was gone.
+                    <br> I don't know, I felt this presence, like,
+                    <br>
+                    <br> "Yeah, you're not supposed to leave. You woke up. You woke up and you made a promise and you're
+                    gonna try to do everything to figure out why you don't want to be here,and also figure out a way to stay."
+                    <br>
+                    <br> My spirituality is checking in with God and saying, "Oh, things are bad," and remembering that time
+                    when my hope was so small and so quiet.
+                    <br> It was like Pandora's Box: all these other things are coming out,
+                    <br> like lies, viciousness, anger, and hope is super tiny and this little white butterfly.
+
+                    <br>Over the years, it's grown, and it's a larger voice in my head than the other ones that are saying,<br>                    "You shouldn't be here."
+                    <br>
+                    <br> The voice of hope is like,
+                    <br> "You have survived all these other things and it's reasonable.”
+                    <br> It's like,<br> "Do you really wanna go? Maybe just keep trying and all of the good things you're
+                    doing will catch up with you and you'll feel better."
+
+                    <br>
+                    <br> That, to me, is spirituality. It's when I'm out in the wilderness and I feel calm, and when I'm
+                    in the Redwoods
+                    <br> and I just feel this sense of safety. It's my favorite place to be. It’s so quiet, and I just can
+                    breathe and
+                    <br> have conversations. It doesn't happen in a church. It happens on my way driving with no music. It's
+                    just a conversation,
+                    <br> but that's one of the many things that has been keeping me well. And sane. My version of sane. Gotta
+                    be interesting.
+                  </p>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <!--=========BOX 6=========-->
+          <div class="portfolio-modal modal fade" id="box6" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-content">
+              <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                  <div class="rl">
+                  </div>
+                </div>
+              </div>
+              <div class="userContainer">
+                <form>
+                  <p>
+                    <br>I’m a human rights activist, first and foremost. Everything that I’ve done since I was a kid, in
+                    terms of what’s been important to me, has been activism–whether it’s for Muslims or it’s for Iranians
+                    or LGBT rights or for people who are mentally ill.
+                    <br>
+                    <br>The thing about the mentally ill is [that] I had never been familiar with that community until I
+                    was diagnosed and went into the hospital and realized that this is an incredibly vulnerable community
+                    that is so silent and is not some tiny minority of people. You’re talking 25 percent of the population
+                    in a given year. 50 percent of people in their lifetime will have a mental illness. It’s not some tiny
+                    minority of people, but they’re so fucking quiet about it, and that was the thing that really pissed
+                    me off when I went into the hospital and realized that.
+                    <br>
+                    <br>One of the stories that I think is really indicative is, I was in a hospital in Ohio and it was...
+                    2008 was the election, and so I was very excited. Everybody had this Obama mania, and I was manic. At
+                    the time, I thought I was a high-level advisor to President Obama, so I was very excited for him to win.
+                    Anyway, there was a gentleman on the floor who had been a Vietnam vet–I had already voted early, so it
+                    wasn’t an issue for me–but he was a vet and he asked to vote, and one of the nurses laughed at him. You
+                    can’t do that. That’s illegal. You can’t take someone’s right to vote away because they have a mental
+                    illness or because they’re hospitalized.
+                    <br>
+                    <br>Witnessing something like that, knowing that what she was doing was illegal–and then, on top of it,
+                    the humiliation of laughing at somebody who’d served his country and part of the reason he was there
+                    was because of what he’d gone through–it really pissed me off. It made me realize that we don’t get a
+                    vote in so much. That’s just one example, and it happens to a lot of people...
+                    <br>
+                    <br>I’ve never seen that kind of discrimination plus humiliation. The thing about stigma is there’s general
+                    societal stigma and then there’s the stigma within the mental health community, [which] is a lot worse,
+                    in my experience. You would think it wouldn’t be. There was a study in the UK awhile back about how,
+                    over time, societal stigma has gotten better, but within the mental health community it’s stayed the
+                    same roughly–pretty much the same–over I don’t know how many years, but that’s my experience. I’ve experienced
+                    a lot more discrimination [from medical professionals]. Can you imagine laughing at somebody who says
+                    they want to vote? It’s their most basic civil right. I think, in a way, they become immune and, in a
+                    way, they feel like they have to protect themselves, but at the same time it’s just really dehumanizing.
+                    <br>
+                    <br>
+
+                  </p>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <!--===============================================================WORKERS MODAL============================================================================================-->
+
+
+          <!--=========WORKER 1=========-->
+          <div class="portfolio-modal modal fade" id="worker1" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-content">
+              <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                  <div class="rl">
+                  </div>
+                </div>
+              </div>
+              <div class="userContainer" id="worker1-modal">
+                <form>
+                  <div id="worker1-modal-pic">
+                    <img class="img-circle img-responsive" id="joshpic" src="worker1.jpg">
+                  </div>
+                  <div id="worker1-modal-text">
+                    Name: Josh Baker </br>
+                    Age: 28 </br>
+                    Description: A Harvard Graduated Psychiastrist
+                  </div>
+                  <div>
+                    <button id="worker1-modal-chatbutton">Chat</button>
+                  </div>
+
+                </form>
+              </div>
+            </div>
+          </div>
+          <!--=========WORKER 2=========-->
+          <div class="portfolio-modal modal fade" id="worker2" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-content">
+              <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                  <div class="rl">
+                  </div>
+                </div>
+              </div>
+              <div class="userContainer">
+                <form>
+                  <div>
+                    <img class="img-circle img-responsive" id="worker2-modal-pic" src="http://www.bulle8.com/wp-content/uploads/2017/01/pp.jpg">
+                  </div>
+                  <div id="worker1-modal-text">
+                    Name: Ashraqat Nura </br>
+                    Age: 26 </br>
+                    Description: A Princeton Graduated Social Worker
+                  </div>
+                  <div>
+                    <button id="worker1-modal-chatbutton">Chat</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <!--=========WORKER 3=========-->
+          <div class="portfolio-modal modal fade" id="worker3" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-content">
+              <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                  <div class="rl">
+                  </div>
+                </div>
+              </div>
+              <div class="userContainer">
+                <form>
+                  <div id="worker1-modal-pic">
+                    <img class="img-circle img-responsive" id="joshpic" src=" http://www.bulle8.com/wp-content/uploads/2017/01/%5EEB015A896D74E1A61B1AB2D3BAB843A0076B0257B42BDE912E%5Epimgt1_distr.jpg">
+                  </div>
+                  <div id="worker1-modal-text">
+                    Name: Nyarai Emem </br>
+                    Age: 35 </br>
+                    Description: A Yale Graduated Social Worker
+                  </div>
+                  <div>
+                    <button id="worker1-modal-chatbutton">Chat</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <!--=========WORKER 4=========-->
+          <div class="portfolio-modal modal fade" id="worker4" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-content">
+              <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                  <div class="rl">
+                  </div>
+                </div>
+              </div>
+              <div class="userContainer">
+                <form>
+                  <div id="worker1-modal-pic">
+                    <img class="img-circle img-responsive" id="joshpic" src=" https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAxsAAAAJDBiZWJhZTJkLWVjNzQtNDE4My05MjM4LTU0MjI2ODRmYTdlYg.jpg">
+                  </div>
+                  <div id="worker1-modal-text">
+                    Name: Joel </br>
+                    Age: 17 </br>
+                    Description: CoFounder of You Are Loved
+                  </div>
+                  <div>
+                    <button id="worker1-modal-chatbutton">Chat</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <!--=========WORKER 5=========-->
+          <div class="portfolio-modal modal fade" id="worker5" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-content">
+              <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                  <div class="rl">
+                  </div>
+                </div>
+              </div>
+              <div class="userContainer">
+                <form>
+                  <div id="worker1-modal-pic">
+                    <img class="img-circle img-responsive" id="joshpic" src="Noor.png">
+                  </div>
+                  <div id="worker1-modal-text">
+                    Name: Noor </br>
+                    Age: 17 </br>
+                    Description: CoFounder of You Are Loved
+                  </div>
+                  <div>
+                    <button id="worker1-modal-chatbutton">Chat</button>
+                  </div>
+                </form>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="userContainer">
-        <form>
-          <p>
-            <br> "I think the aftermath was really constructive. I needed to know what was worth saving about me.
-            <br> After that, I spent so much time alone because I felt like I needed to give myself rehab. I started writing
-            and photographing things and
-            <br> living with myself, being my own girlfriend… I started figuring out who I wanted to save: the Tile that
-            I didn’t want to be gone.
-            <br>
-            <br> "For me, in the moments after I had actually done everything that I had been planning for so
-            <br> long, I realized that I didn’t want to die. But, that’s unique. That’s not everyone. It wasn’t a release;
-            it
-            <br> was afraid. I was afraid, and I said, 'There must be someone that I like in there,' and that was what I
-            realized."
-          </p>
 
-        </form>
-      </div>
-    </div>
-  </div>
-
-  <!--=========BOX 2=========-->
-  <div class="portfolio-modal modal fade" id="box2" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-content">
-      <div class="close-modal" data-dismiss="modal">
-        <div class="lr">
-          <div class="rl">
-          </div>
-        </div>
-      </div>
-      <div class="userContainer">
-        <form>
-          <p>"They say time heals all wounds... I still have those thoughts every day. Every once in a while, I’ll think about
-            it and go, 'Why am I here? What’s keeping me tethered to this, right here?' </p>
-          <br>
-          <p> "I’ve met a bunch of people, and they say that I’m a really awesome guy, that I’m really easy to talk to, I’m really
-            funny. They give me all these compliments and stuff and I’m like, 'You might see that, but I don’t know how much
-            of that is actually real.'</p>
-          <br>
-          <p>"I don’t know how much of that is actually just me putting on a face and smiling through my teeth, or an actual
-            thing, 'cause I feel when I did that, I really lost a huge sense of my own identity. I didn’t know who I was
-            for a while. I didn’t know this person that I became, because I really shattered what self-image I had. That
-            became the hardest thing to cope with — my own self-image and trying to rebuild that. It took me a long time
-            to do it, but in the end, I found part of myself again."
-          </p>
-
-        </form>
-      </div>
-    </div>
-  </div>
-
-  <!--=========BOX 3=========-->
-  <div class="portfolio-modal modal fade" id="box3" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-content">
-      <div class="close-modal" data-dismiss="modal">
-        <div class="lr">
-          <div class="rl">
-          </div>
-        </div>
-      </div>
-      <div class="userContainer">
-        <br> The first time I attempted suicide, I was a junior in high school. It was around the time of college applications.
-        Everyone’s like, “We need to figure out our future.” I was like, “Oh, god. I can’t do that. I have no idea.” Plus,
-        I’d been depressed for a few years, starting in middle school, so it was that and the uncertainty of leaving high
-        school. I had no idea what I was doing, but apparently I should have known at that point, which is a terrible thing
-        to tell teenagers.
-        <br>
-        <br>I was at a school that was pretty high-achieving, so I was surrounded by people that were really on-track. They
-        had their shit together. They knew what they were doing, and I was floundering. I thought I was supposed to be one
-        of these put-together people, but I couldn’t quite do it. Eventually I got way too overwhelmed. I was like, “I can’t.
-        I can’t do it. I just can’t deal with this.”
-        <br>
-        <br>Going to school was so terrible. I’d wake up every morning and go, “Goddammit. I have to do this again.” It was
-        painful going through the motions.
-        <br>
-        <br>One night, I was home alone. I lived with my mom at the time, but she was out. I overdosed on pills I found around
-        the house. Shortly after I took them, I thought, “Maybe this was not a good idea.” I called a friend. She came over
-        and called the ambulance. I was taken to the hospital, and I voluntarily went into a psych ward. I was only there
-        a few days because I was a minor at the time. Pretty much whatever my parents said went.
-        <br>
-        <br>After a couple of days, my mom was like, “Yeah, I think you’re good now.”
-        <br>
-        <br>I was like, “Alright, let’s bounce, I guess.”
-        <br>
-        <br>My time in there wasn’t really helpful. I expected people, in general, to be really judgmental because there’s
-        still such a strong stigma, but I didn’t expect medical professionals to be that judgmental. The mental health techs
-        were really nice. They interacted with patients all the time; they knew what was what. When I talked to psychiatrists,
-        they would be like, “Oh, you know, what you did was really serious. You really worried your parents.”
-        <br>
-        <br>I was like, “I know. I’m sorry. That’s not what I meant to do. I’m just a teenager, my brain is not good yet.”
-        <br>
-        <br>I was put on medication. They didn’t really talk too much about it. [They just said], “It’s an SSRI. This is
-        how it works. Take it every day. You’ll start feeling better in a couple weeks.”
-        <br>
-        <br>At some point, I stopped taking them cold turkey. They always say not to do that, ever—it’s terrible—but I did,
-        and I felt horrible. I thought, “I don’t really need these pills anymore. I’m feeling better,” so I stopped taking
-        them, which was probably a bad idea. It was definitely a bad idea without consulting someone.
-        <br>
-        <br>Then, I was alright. I was pretty stable for the next couple years, living at home, and going to community college,
-        trying to transfer out. I really wanted to leave home and go anywhere but California. Maybe three years later, I
-        transferred to upstate New York to go to school. It was not a good idea. I didn’t know anyone in New York.
-        <br>
-        <br>It was about two hours out of the city—a really small place. The only person I knew lived about five hours away
-        from me. All my friends were back in California and I don’t make new friends easily. I got along well with my housemates,
-        but other than that, I didn’t really have any friends. There wasn’t much social support.
-        <br>
-        <br>Part of my deteriorating mental state at that time was [due] to taking really early classes. They were at 7 AM,
-        so I had to wake up around 6. It sounds kind of dumb—it’s just waking up early—but I get super crazy when I don’t
-        get enough sleep, so I’d stay up really late because I wasn’t thinking of consequences. Then I’d wake up at 6 AM
-        and drudge through the freezing cold into class every day. On top of that, I still didn’t really know what I was
-        doing. I was technically majoring in theater at the time, but I didn’t really want to. I was thinking maybe English,
-        but I couldn’t decide.
-        <br>
-        <br>So, I was up here, super far from everyone, doing something I wasn’t sure I wanted to do. I felt really bad because
-        my parents were paying for it, and it was really expensive, especially because I was out-of-state. I got super inside-my-head
-        again. I actually did go talk to a therapist at the school and got medication, but I, again, stopped taking them.
-        I’d miss some doses, [realize it], catch up, and then I’d forget again. I was not consistent, which I think is important
-        to taking medication.
-        <br>
-        <br>That was messing around with my brain. Everything was not good in my head. I didn’t know how to deal with these
-        feelings. I hadn’t dealt with them the first time I attempted. They were coming back, and I [didn’t understand] why
-        I was still feeling like that.
-        <br>
-        <br>I attempted suicide again near the end of the quarter. One of my roommates was home at the time, and she took
-        me to the hospital. This time, I was involuntarily committed to the psych ward, which was not fun. My psychologist
-        scared me. I didn’t like talking to him. He put me on a bunch of medications—maybe three or four.
-        <br>
-        <br>I was there for about two weeks. The first few days were really freaking horrible. I didn’t know what was going
-        on. I didn’t know the routines. There were people telling me what to do all the time. It was a strange experience.
-        <br>
-        <br>After the initial adjustment period, it was actually kind of a relief to be there. It’s not like anyone in there
-        was going to judge me. Everyone was in there for a reason, and it felt nice to not have to put on the appearance
-        that I was I fine. I could be super sad or… just be myself, I guess. Whatever I was at the time.
-        <br>
-        <br>After I got out, I moved back to California. I didn’t really want to stay at home or deal with living with my
-        mom again so, shortly after that, I moved to Georgia to stay with one of my friends. I thought this was definitely
-        a good idea. It would be a new start, in a new place, with new scenery. This time I’d have friends—one of my friends
-        from California came with me. It was the three of us and a couple more people living in an apartment, and I thought
-        it would be great.
-        <br>
-        <br>It was alright for a while, and then I realized… living with friends is not necessarily the best idea. I love
-        my friends to death. We’re still really close, but we did not live well together. Maybe if I’d been in a better place,
-        then it might have been okay. We had a ton of freedom; we all worked part-time jobs, a couple hours a week. Other
-        than that, we could do pretty much whatever we wanted, whenever we wanted. Stay up till 4, sleep in till 4.
-        <br>
-        <br>That was not helpful at the time, not at all. There were people coming in and out all the time. There were lots
-        of drugs—mostly weed. I was not into it at all. I reacted to that by being a horrible, horrible roommate. I was super
-        passive-aggressive and picked fights all the time. I made everything super toxic for everyone who lived there, which
-        made it worse for myself.
-        <br>
-        <br>At this point, I was really angry that I couldn’t get out of this funk. I didn’t understand why I felt so bad
-        all the time. Even back in middle school, when I first was diagnosed with depression, I didn’t know why. They don’t
-        really talk about it a lot in school, which is where I got most of my information. What I knew about mental illness
-        was from movies, TV, books… and it seemed like, in those cases, there was always a catalyst or something that happened
-        in their lives that derailed them—a reason why they’re depressed. I didn’t have that. I had a really good childhood.
-        There was no big trauma, nothing like that. So I thought, “Why am I feeling like this? There’s no reason. It’s not
-        legitimate. There must be something wrong with me to feel this way.”
-        <br>
-        <br>I felt like that for a long time. When I was in Georgia, I was like, “Why do I still feel like this? I need to
-        just get over it or something.” I didn’t go see anyone. I think, when I moved there, I still had medication leftover
-        from when I was prescribed them in New York. When I ran out, I honestly didn’t know how to get more or where to find
-        a new psychologist. It was so daunting and I had no motivation to do it. I stopped cold turkey again, which is way
-        worse when you’re on a lot of medication.
-        <br>
-        <br>I was going through the withdrawal type things, which were awful. I was working a part-time job at a restaurant
-        nearby, and I hated it. I don’t really like talking to strangers a lot. It was so much interaction constantly. People
-        were always getting mad at me for stupid things I had no control over. I’m like, “I don’t actually cook the meals.
-        I just bring them to you and then take them away.” [It’s a high-pressure job], and I just couldn’t do it. I’d only
-        been there for a month or two, but I hated it. I hated living with my friends, and I hated everything about the situation.
-        <br>
-        <br>One night, I was sulking in the room alone and thinking, “I have to get up early tomorrow for work. I really
-        don’t want to go to work. It’s terrible.” Then I got this thought in my head, “Well, I still have [medication] left.
-        If I take all of those and don’t wake up, I won’t have to go to work. I won’t have to deal with work or my friends
-        or any of this.” It wasn’t a logical thought at all, but it had lodged itself into my mind like, “No work tomorrow.
-        You don’t have to do it. Just take the pills, and that will solve everything.” I was like, “Yeah, I’ll just do that.”
-        <br>
-        <br>The other two times I attempted, after I’d taken the pills, I realized it was a bad idea and I shouldn’t have
-        done that. This third time, the most recent time, I honestly didn’t care. I didn’t tell anyone. My friends were all
-        outside sleeping or doing whatever. I didn’t want to stop it. I wasn’t sure if I was going to wake up or not, but
-        if I didn’t… cool.
-        <br>
-        <br>I went to bed, and woke up maybe a couple hours later. I was super sick for the rest of the night. In the morning,
-        one of my friends found me passed out in the bathroom—so much puke everywhere. They had to call an ambulance.
-        <br>
-        <br>I was involuntarily committed again, but this time was really scary because my friends didn’t know where I was.
-        I didn’t know how to get in contact with anyone. Apparently, once they moved me from the ER to the psych floor, they
-        weren’t allowed to tell anyone I was there, unless it was my family or something. I didn’t realize that, so I was
-        there for a couple days like, “Oh my god. Why aren’t my friends contacting me? I don’t have any of my stuff.” I was
-        in a hospital gown that was three sizes too big, so I wrapped it around myself and shuffled through the halls like,
-        “Where is everyone? I don’t know where I am, exactly. I don't know how long I have to be here. I really want to see
-        someone familiar.”
-        <br>
-        <br>That was really scary, but eventually I did get in contact with my friends. I was there for about two weeks.
-        I got out, and that was the last time. That was nine years ago.
-        <br>
-        <br>I’ve been doing a lot better. I wish I could say it was because I went to therapy and I started taking medication
-        regularly like an adult. But I didn’t. I probably should have. I think my brain chemistry maybe settled down because
-        I got older and into a more stable pattern of living. I wasn’t moving around constantly. I got a job. I started going
-        to school. Sometimes I still feel little glimpses of how I felt back then. It’s terrifying, but generally those don’t
-        last long.
-        </form>
-      </div>
-    </div>
-  </div>
-
-  <!--=========BOX 4=========-->
-  <div class="portfolio-modal modal fade" id="box4" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-content">
-      <div class="close-modal" data-dismiss="modal">
-        <div class="lr">
-          <div class="rl">
-          </div>
-        </div>
-      </div>
-      <div class="userContainer">
-        <form>
-          <p>
-            <br>Kate MacHugh is now 25. She’s an author and clinician.
-            <br>
-            <br>But she only got to where she is now by overcoming depression as a teenager.
-            <br>
-            <br>MacHugh said she was “harassed, humiliated and cyberbullied,” during her teenage years, leading her to go
-            from being a happy and vibrant youngster to someone more angry and “sullen.” Once she became a different person,
-            she slowly slipped into the murky waters of depression.
-            <br>
-            <br>“It was the lowest I have ever felt in my life," she said to the National.
-            <br>
-            <br>But everything changed once she went to college. The peers who had put her down and bullied her within the
-            walls of high school were long gone, and she could finally start focusing on what made her unique and special.
-            Instilling confidence in herself was what got her past depression and on a path to success, she said.
-            <br>
-            <br>“I worked really hard to change the messages in my head,” MacHugh said. “I was led to believe that I was
-            ugly, worthless, and disgusting. I internalized these messages and they became part of my identity. I began to
-            tell myself that I was smart, loved and beautiful."
-          </p>
-
-        </form>
-      </div>
-    </div>
-  </div>
-
-  <!--=========BOX 5=========-->
-  <div class="portfolio-modal modal fade" id="box5" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-content">
-      <div class="close-modal" data-dismiss="modal">
-        <div class="lr">
-          <div class="rl">
-          </div>
-        </div>
-      </div>
-      <div class="userContainer">
-        <form>
-          <p>
-            <br> My faith? My faith is interesting. I grew up in the church, but I grew up in the Episcopalian church, which
-            is like diet Catholic.
-            <br> We're like, "Ehh! We're gonna say some nice and great stuff and here's a wafer, but you know, you can
-            
-            <br> get divorced, and gay people are cool." That's my kinda church.
-            <br>
-
-            <br>  I grew up in a very open, lovely church, but I had difficulties with my relationship with God because I just
-            didn't understand how I could be so sad, and when would it stop? 
-            <br>I attempted more than once, but the huge one when I was 25. <br>
-            <br> When I was 25, I made a promise to God before I attempted and I said, "If this doesn't work, I'm never doing this again." I really meant
-            it because
-            <br> I felt like I needed to do something else. I had lost a friend who had died in an accident, and again,
-            
-            
-            <br>  I had a similar feeling of feeling guilty that I was going to attempt and that he wasn't here, and wanting to
-            trade places like,
-            <br>
-            <br>  "I would happily give my life, 'cause you deserve life, 'cause you want it. You're thirsty
-            for it,and I question if I want it."
-            <br>
-            <br>   The day that I attempted, I took this lavender rose that he had given to a
-            friend, and my friend gave it to me, so I had it from him.
-            <br>  When I woke up the next day, after surviving, it was
-            gone.
-            <br> I don't know, I felt this presence, like, 
-            <br>
-            <br>  "Yeah, you're not supposed to leave. You woke up. You woke up and you made a promise and you're gonna try to do everything to figure out why you don't want to be here,and also figure out a way to stay."
-           <br>
-             <br>  My spirituality is checking in with God and saying, "Oh, things are bad," and remembering that time when my hope was so small and so quiet.
-            <br>  It was like Pandora's Box: all these other things are
-            coming out,
-            <br>  like lies, viciousness, anger, and hope is super tiny and this little white butterfly. 
-           
-            <br>Over the years, it's grown, and it's a larger voice in my head than the other ones that are saying,<br> "You shouldn't be here."
-           <br>
-            <br> The voice of hope is like,
-            <br> "You have survived all these other things and it's reasonable.”
-            <br> It's like,<br> 
-            "Do you really wanna go? Maybe just keep trying and all of the good things you're doing will catch up with you and you'll feel
-            better."
-            
-            <br> 
-            <br> That, to me, is spirituality. It's when I'm out in the wilderness and I feel calm, and when I'm in the Redwoods
-            <br> and I just feel this sense of safety. It's my favorite place to be. It’s so quiet, and I just can breathe
-            and
-            <br> have conversations. It doesn't happen in a church. It happens on my way driving with no music. It's just
-            a conversation,
-            <br> but that's one of the many things that has been keeping me well. And sane. My version of sane. Gotta be
-            interesting.
-          </p>
-        </form>
-      </div>
-    </div>
-  </div>
-
-  <!--=========BOX 6=========-->
-  <div class="portfolio-modal modal fade" id="box6" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-content">
-      <div class="close-modal" data-dismiss="modal">
-        <div class="lr">
-          <div class="rl">
-          </div>
-        </div>
-      </div>
-      <div class="userContainer">
-        <form>
-          <p>
-            <br>I’m a human rights activist, first and foremost. Everything that I’ve done since I was a kid, in terms of
-            what’s been important to me, has been activism–whether it’s for Muslims or it’s for Iranians or LGBT rights or
-            for people who are mentally ill.
-            <br>
-            <br>The thing about the mentally ill is [that] I had never been familiar with that community until I was diagnosed
-            and went into the hospital and realized that this is an incredibly vulnerable community that is so silent and
-            is not some tiny minority of people. You’re talking 25 percent of the population in a given year. 50 percent
-            of people in their lifetime will have a mental illness. It’s not some tiny minority of people, but they’re so
-            fucking quiet about it, and that was the thing that really pissed me off when I went into the hospital and realized
-            that.
-            <br>
-            <br>One of the stories that I think is really indicative is, I was in a hospital in Ohio and it was... 2008 was
-            the election, and so I was very excited. Everybody had this Obama mania, and I was manic. At the time, I thought
-            I was a high-level advisor to President Obama, so I was very excited for him to win. Anyway, there was a gentleman
-            on the floor who had been a Vietnam vet–I had already voted early, so it wasn’t an issue for me–but he was a
-            vet and he asked to vote, and one of the nurses laughed at him. You can’t do that. That’s illegal. You can’t
-            take someone’s right to vote away because they have a mental illness or because they’re hospitalized.
-            <br>
-            <br>Witnessing something like that, knowing that what she was doing was illegal–and then, on top of it, the humiliation
-            of laughing at somebody who’d served his country and part of the reason he was there was because of what he’d
-            gone through–it really pissed me off. It made me realize that we don’t get a vote in so much. That’s just one
-            example, and it happens to a lot of people...
-            <br>
-            <br>I’ve never seen that kind of discrimination plus humiliation. The thing about stigma is there’s general societal
-            stigma and then there’s the stigma within the mental health community, [which] is a lot worse, in my experience.
-            You would think it wouldn’t be. There was a study in the UK awhile back about how, over time, societal stigma
-            has gotten better, but within the mental health community it’s stayed the same roughly–pretty much the same–over
-            I don’t know how many years, but that’s my experience. I’ve experienced a lot more discrimination [from medical
-            professionals]. Can you imagine laughing at somebody who says they want to vote? It’s their most basic civil
-            right. I think, in a way, they become immune and, in a way, they feel like they have to protect themselves, but
-            at the same time it’s just really dehumanizing.
-            <br>
-            <br>
-            <br>If you’re feeling suicidal, please talk to somebody. You can reach the National Suicide Prevention Lifeline
-            at 1-800-273-8255.
-          </p>
-        </form>
-      </div>
-    </div>
-  </div>
-
-  <!--===============================================================WORKERS MODAL============================================================================================-->
-
-
-  <!--=========WORKER 1=========-->
-  <div class="portfolio-modal modal fade" id="worker1" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-content">
-      <div class="close-modal" data-dismiss="modal">
-        <div class="lr">
-          <div class="rl">
-          </div>
-        </div>
-      </div>
-      <div class="userContainer" id="worker1-modal">
-        <form>
-            <div id="worker1-modal-pic">
-              <img class="img-circle img-responsive" id="joshpic" src="worker1.jpg">
-            </div>
-            <div id="worker1-modal-text">
-              Name: Josh Baker </br>
-              Age: 28 </br>
-              Description: A Harvard Graduated Psychiastrist
-            </div>
-            <div>
-              <button id="worker1-modal-chatbutton">Chat</button>
-            </div>
-          
-        </form>
-      </div>
-    </div>
-  </div>
-  <!--=========WORKER 2=========-->
-  <div class="portfolio-modal modal fade" id="worker2" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-content">
-      <div class="close-modal" data-dismiss="modal">
-        <div class="lr">
-          <div class="rl">
-          </div>
-        </div>
-      </div>
-      <div class="userContainer">
-        <form>
-            <div>
-              <img class="img-circle img-responsive" id="worker2-modal-pic" src="http://www.bulle8.com/wp-content/uploads/2017/01/pp.jpg">
-            </div>
-            <div id="worker1-modal-text">
-              Name: Ashraqat Nura </br>
-              Age: 26 </br>
-              Description: A Princeton Graduated Social Worker
-            </div>
-            <div>
-              <button id="worker1-modal-chatbutton">Chat</button>
-            </div>
-        </form>
-      </div>
-    </div>
-  </div>
-  <!--=========WORKER 3=========-->
-  <div class="portfolio-modal modal fade" id="worker3" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-content">
-      <div class="close-modal" data-dismiss="modal">
-        <div class="lr">
-          <div class="rl">
-          </div>
-        </div>
-      </div>
-      <div class="userContainer">
-        <form>
-            <div id="worker1-modal-pic">
-              <img class="img-circle img-responsive" id="joshpic" src=" http://www.bulle8.com/wp-content/uploads/2017/01/%5EEB015A896D74E1A61B1AB2D3BAB843A0076B0257B42BDE912E%5Epimgt1_distr.jpg">
-            </div>
-            <div id="worker1-modal-text">
-              Name: Nyarai Emem </br>
-              Age: 35 </br>
-              Description: A Yale Graduated Social Worker
-            </div>
-            <div>
-              <button id="worker1-modal-chatbutton">Chat</button>
-            </div>
-        </form>
-      </div>
-    </div>
-  </div>
-  <!--=========WORKER 4=========-->
-  <div class="portfolio-modal modal fade" id="worker4" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-content">
-      <div class="close-modal" data-dismiss="modal">
-        <div class="lr">
-          <div class="rl">
-          </div>
-        </div>
-      </div>
-      <div class="userContainer">
-        <form>
-            <div id="worker1-modal-pic">
-              <img class="img-circle img-responsive" id="joshpic" src=" https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAxsAAAAJDBiZWJhZTJkLWVjNzQtNDE4My05MjM4LTU0MjI2ODRmYTdlYg.jpg">
-            </div>
-            <div id="worker1-modal-text">
-              Name: Joel </br>
-              Age: 17 </br>
-              Description: CoFounder of You Are Loved
-            </div>
-            <div>
-              <button id="worker1-modal-chatbutton">Chat</button>
-            </div>
-        </form>
-      </div>
-    </div>
-  </div>
-  
-  <!--=========WORKER 5=========-->
-  <div class="portfolio-modal modal fade" id="worker5" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-content">
-      <div class="close-modal" data-dismiss="modal">
-        <div class="lr">
-          <div class="rl">
-          </div>
-        </div>
-      </div>
-      <div class="userContainer">
-        <form>
-            <div id="worker1-modal-pic">
-              <img class="img-circle img-responsive" id="joshpic" src="Noor.png">
-            </div>
-            <div id="worker1-modal-text">
-              Name: Noor </br>
-              Age: 17 </br>
-              Description: CoFounder of You Are Loved
-            </div>
-            <div>
-              <button id="worker1-modal-chatbutton">Chat</button>
-            </div>
-        </form>
-      </div>
-    </div>
-  </div>
-
-
-
-  <!--===========================================================================================================================================================-->
-  <link rel="Stylesheet" href="style.css">
-  <script src="index.js"></script>
+      <!--===========================================================================================================================================================-->
+      <link rel="Stylesheet" href="style.css">
+      <script src="index.js"></script>
 </body>
 
 </html>
