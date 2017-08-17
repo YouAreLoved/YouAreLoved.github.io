@@ -6,5 +6,6 @@ function storename() {
     
     var name=document.getElementById("un").value;
 $('#profile').text(name);
+
 }
 

@@ -114,7 +114,7 @@ background-repeat: no-repeat;
 
 
 #dominick{
-background: url(https://files.slack.com/files-tmb/T6139LFPE-F6PDUSWKW-8935fa145a/dominick_quagliata_360.jpg);
+background: url(http://s1.r29static.com//bin/entry/fb0/x,80/1373334/image.jpg);
 background-size: 100%; 
 background-repeat: no-repeat;
 }
@@ -125,7 +125,7 @@ background-repeat: no-repeat;
 }
 
 #kate{
-background: url(https://files.slack.com/files-pri/T6139LFPE-F6PAADVEX/kate_machugh.jpg);
+background: url(http://s2.r29static.com//bin/entry/daa/x,80/1373341/image.jpg);
 background-size: 100%; 
 background-repeat: no-repeat;
 }
@@ -137,7 +137,7 @@ background-repeat: no-repeat;
 }
 
 
-#melody{background: url(https://files.slack.com/files-tmb/T6139LFPE-F6PEH114L-55be08017a/melody_moezzi_720.jpg);
+#melody{background: url(http://s2.r29static.com//bin/entry/d05/x,80/1373332/image.jpg);
 background-size: 100%; 
 background-repeat: no-repeat;
 }
@@ -156,6 +156,13 @@ padding: 20px;
   text-align: left;
   position: absolute;
   left: 30%;
+  top: 10%;
+}
+#worker1-modal-text-Ash {
+  font-size: 40px;
+  text-align: left;
+  position: absolute;
+  left: 32%;
   top: 10%;
 }
 
@@ -191,4 +198,54 @@ padding: 20px;
    left: 25%; 
   /* width: 100%; */
  font-size: 1000%;
+}
+
+#firstContainer {
+  max-height:400px;
+}
+
+
+
+
+ @media screen and (min-width: 480px) {
+    .jumbotron {
+      /* border-radius: 25px; */
+      min-height: 100%;
+   min-width: 100%;      
+   max-height: 100%;
+   max-width: 100%;
+   color:white;
+   float: left;
+    }
+ }
+
+ .canvas{
+ position:relative;
+ top: 90%;
+     /* left: 100px; */
+     /* top: 200px;   */
+     width:100%;
+  /* padding: 0px 0px 0px 4px; */
+ background-color: rgba(0,0,0,0.3);  
+text-align: bottom;
+ }
+
+/* }
+#dominick-text-box {
+  position:relative;
+  top:90%;
+  background-color: rgba(0,0,0,0.3); 
+}  
+.lead{
+position:absolute;
+bottom: 100%; 
+
+
+}*/
+
+#logopic {
+  margin-top: -15px;
+  /* left:1px;
+  top:10px; */
+  height:50px;
 }
